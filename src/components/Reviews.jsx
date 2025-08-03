@@ -4,21 +4,21 @@ const testimonials = [
     location: "Delhi University",
     review:
       "Finding a PG was always stressful, but this site made it so easy. I loved the clear filters and the verified listings!",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    avatar: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200",
   },
   {
     name: "Arjun Mehta",
     location: "Bangalore",
     review:
       "The UI is super clean and intuitive. Found a PG in under 10 minutes. Highly recommend this platform!",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    avatar: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200",
   },
   {
     name: "Sana Iqbal",
     location: "Mumbai",
     review:
       "I was moving cities and had no clue where to stay. This platform helped me compare prices, amenities, and even read PG ratings.",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    avatar: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200",
   },
 ];
 
