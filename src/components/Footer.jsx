@@ -1,23 +1,23 @@
 const Footer = () => {
   return (
-    <footer className="bg-gray-950 text-gray-400 px-6 py-10">
+    <footer className="bg-teal-50 text-black-400 px-6 py-10">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 border-b border-gray-800 pb-8">
         {/* Resources */}
         <div>
           <h4 className="text-base font-semibold text-white mb-3">Resources</h4>
           <ul className="space-y-1 text-sm leading-relaxed">
-            <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">FAQs</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Terms & Conditions</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="#" className="hover:text-gray-600 transition-colors">Blog</a></li>
+            <li><a href="#" className="hover:text-gray-600 transition-colors">FAQs</a></li>
+            <li><a href="#" className="hover:text-gray-600 transition-colors">Terms & Conditions</a></li>
+            <li><a href="#" className="hover:text-gray-600 transition-colors">Privacy Policy</a></li>
           </ul>
         </div>
 
         {/* Contact Info */}
         <div>
-          <h4 className="text-base font-semibold text-white mb-3">Get in Touch</h4>
-          <p className="text-sm mb-1">Email: <span className="text-gray-300">support@pgfinder.com</span></p>
-          <p className="text-sm mb-4">Phone: <span className="text-gray-300">+91 xxxxx xxxxx </span></p>
+          <h4 className="text-base font-semibold text-gray-800 mb-3">Get in Touch</h4>
+          <p className="text-sm mb-1">Email: <span className="text-gray-700">support@pgfinder.com</span></p>
+          <p className="text-sm mb-4">Phone: <span className="text-gray-700">+91 xxxxx xxxxx </span></p>
           <div className="flex gap-3">
             <a href="#" className="hover:text-white text-sm transition-colors">Instagram</a>
             <span className="text-gray-600">|</span>

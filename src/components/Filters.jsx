@@ -49,15 +49,15 @@
 
 const Filters = () => {
   return (
-    <section className="bg-gray-950 text-gray-300 py-10 px-6">
+    <section className="bg-white-50 text-gray-300 py-10 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-xl font-semibold mb-6 text-white">Filter Listings</h2>
+        <h2 className="text-xl font-semibold mb-6 text-gray-900">Filter Listings</h2>
 
         <div className="grid md:grid-cols-3 gap-6">
           {/* Location */}
           <div>
-            <label className="block text-sm mb-2">Location</label>
-            <select className="w-full bg-gray-800 text-gray-200 px-4 py-2 rounded-md outline-none focus:ring-2 focus:ring-blue-500">
+            <label className="block text-sm mb-2 text-black">Location</label>
+            <select className="w-full bg-gray-300 text-black px-4 py-2 rounded-md outline-none focus:ring-2 focus:ring-blue-500">
               <option>All</option>
               <option>Delhi</option>
               <option>Mumbai</option>
@@ -67,18 +67,18 @@ const Filters = () => {
 
           {/* Max Price */}
           <div>
-            <label className="block text-sm mb-2">Max Price (₹)</label>
+            <label className="block text-sm mb-2 text-black">Max Price (₹)</label>
             <input
               type="number"
               placeholder="e.g. 10000"
-              className="w-full bg-gray-800 text-gray-200 px-4 py-2 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-gray-300 text-black px-4 py-2 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
           {/* Amenities */}
           <div>
-            <label className="block text-sm mb-2">Amenities</label>
-            <div className="flex flex-wrap gap-3 text-sm">
+            <label className="block text-sm mb-2 text-black">Amenities</label>
+            <div className="flex flex-wrap gap-3 text-sm text-black">
               {["Wi-Fi", "AC", "Food", "Laundry", "Geyser"].map((amenity) => (
                 <label key={amenity} className="flex items-center gap-1">
                   <input type="checkbox" className="accent-blue-500" />

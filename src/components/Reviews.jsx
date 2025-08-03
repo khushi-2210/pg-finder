@@ -3,14 +3,14 @@ const testimonials = [
     name: "Riya Sharma",
     location: "Delhi University",
     review:
-      "Finding a PG was always stressful, but this site made it so easy. I loved the clear filters and the verified listings!",
+      "I had 3 non-negotiables: good lighting, a big mirror, and cute curtains. Found all three here. Manifested my Pinterest PG ✨.",
     avatar: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200",
   },
   {
     name: "Arjun Mehta",
     location: "Bangalore",
     review:
-      "The UI is super clean and intuitive. Found a PG in under 10 minutes. Highly recommend this platform!",
+      "The Wi-Fi is faster than my manager’s replies. Love the peaceful vibe and chai at the corner tapri.",
     avatar: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200",
   },
   {
@@ -24,14 +24,14 @@ const testimonials = [
 
 const Reviews = () => {
   return (
-    <section className="bg-gray-950 py-20 px-6">
-      <div className="max-w-6xl mx-auto text-white text-center">
+    <section className="bg-green-50 py-20 px-6">
+      <div className="max-w-6xl mx-auto text-black text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12">What Users Say</h2>
         <div className="grid gap-8 md:grid-cols-3">
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="bg-gray-900 rounded-2xl p-6 shadow-md border border-gray-800 hover:shadow-xl transition"
+              className="bg-gray-50 rounded-2xl p-6 shadow-md border border-cyan-800 hover:shadow-xl transition"
             >
               <div className="flex flex-col items-center">
                 <img
@@ -40,10 +40,10 @@ const Reviews = () => {
                   className="w-16 h-16 rounded-full mb-4 border-2 border-blue-500"
                 />
                 <h4 className="text-lg font-semibold">{t.name}</h4>
-                <p className="text-sm text-gray-400 mb-2">{t.location}</p>
+                <p className="text-sm text-black mb-2">{t.location}</p>
               </div>
-              <p className="text-sm text-gray-300 mt-4 leading-relaxed">
-                “{t.review}”
+              <p className="text-sm text-black mt-4 leading-relaxed">
+                {t.review}
               </p>
             </div>
           ))}

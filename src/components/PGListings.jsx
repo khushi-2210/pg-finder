@@ -27,7 +27,7 @@ const dummyPGs = [
 
 const PGListings = () => {
   return (
-    <section className="bg-gray-950 py-20 px-6 text-white">
+    <section className="bg-teal-50 py-20 px-6 text-black">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center m-2 mt-0">
           PG Listings
