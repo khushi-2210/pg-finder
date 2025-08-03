@@ -76,18 +76,19 @@ const Navbar = () => {
         </h1>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-8 text-sm font-medium">
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">
-            Home
-          </a>
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">
-            Listings
-          </a>
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">
-            About
-          </a>
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">
-            Contact
+        <nav className="hidden md:flex space-x-8 text-sm font-medium items-center">
+          <a href="#" className="text-gray-600 hover:text-teal-600 transition">Home</a>
+          <a href="#" className="text-gray-600 hover:text-teal-600 transition">Listings</a>
+          <a href="#" className="text-gray-600 hover:text-teal-600 transition">About</a>
+          <a href="#" className="text-gray-600 hover:text-teal-600 transition">Contact</a>
+          
+          {/* Auth Buttons */}
+          <a href="/login" className="text-gray-600 hover:text-teal-600 hover:underline transition">Login</a>
+          <a 
+            href="/signup" 
+            className="ml-2 bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-full transition"
+          >
+            Sign Up
           </a>
         </nav>
 
@@ -105,17 +106,16 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <nav className="md:hidden px-6 pb-4 flex flex-col space-y-3 bg-white text-sm">
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">
-            Home
-          </a>
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">
-            Listings
-          </a>
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">
-            About
-          </a>
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">
-            Contact
+          <a href="#" className="text-gray-600 hover:text-teal-600 transition">Home</a>
+          <a href="#" className="text-gray-600 hover:text-teal-600 transition">Listings</a>
+          <a href="#" className="text-gray-600 hover:text-teal-600 transition">About</a>
+          <a href="#" className="text-gray-600 hover:text-teal-600 transition">Contact</a>
+          <a href="/login" className="text-gray-600 hover:text-teal-600 transition">Login</a>
+          <a 
+            href="/signup" 
+            className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-full text-center transition"
+          >
+            Sign Up
           </a>
         </nav>
       )}
@@ -124,5 +124,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
