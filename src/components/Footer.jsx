@@ -1,15 +1,34 @@
 const Footer = () => {
   return (
-    <footer className="bg-blue-100 text-gray-800 py-6 mt-10">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        <p className="text-center md:text-left">
-          © {new Date().getFullYear()} PG Finder. All rights reserved.
-        </p>
-        <div className="mt-4 md:mt-0 flex space-x-4">
-          <a href="#" className="hover:underline">Privacy Policy</a>
-          <a href="#" className="hover:underline">Terms</a>
-          <a href="#" className="hover:underline">Contact</a>
+    <footer className="bg-gray-950 text-gray-400 px-6 py-10">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 border-b border-gray-800 pb-8">
+        {/* Resources */}
+        <div>
+          <h4 className="text-base font-semibold text-white mb-3">Resources</h4>
+          <ul className="space-y-1 text-sm leading-relaxed">
+            <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
+            <li><a href="#" className="hover:text-white transition-colors">FAQs</a></li>
+            <li><a href="#" className="hover:text-white transition-colors">Terms & Conditions</a></li>
+            <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+          </ul>
         </div>
+
+        {/* Contact Info */}
+        <div>
+          <h4 className="text-base font-semibold text-white mb-3">Get in Touch</h4>
+          <p className="text-sm mb-1">Email: <span className="text-gray-300">support@pgfinder.com</span></p>
+          <p className="text-sm mb-4">Phone: <span className="text-gray-300">+91 xxxxx xxxxx </span></p>
+          <div className="flex gap-3">
+            <a href="#" className="hover:text-white text-sm transition-colors">Instagram</a>
+            <span className="text-gray-600">|</span>
+            <a href="#" className="hover:text-white text-sm transition-colors">Twitter</a>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom note */}
+      <div className="text-center text-xs text-gray-500 mt-6">
+        © {new Date().getFullYear()} PGFinder. All rights reserved.
       </div>
     </footer>
   );

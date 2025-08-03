@@ -1,18 +1,24 @@
 const Hero = () => {
   return (
-    <section className="bg-blue-50 py-20 px-6 text-center">
-      <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
-        Find Your Perfect PG
-      </h1>
-      <p className="text-lg md:text-xl text-gray-600 mb-8">
-        Search and discover the best paying guest accommodations around you.
-      </p>
-      <div className="max-w-xl mx-auto">
-        <input
-          type="text"
-          placeholder="Enter city, area, or landmark"
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
+    <section className="bg-gray-950 text-white py-20 px-6">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12">
+        {/* Text */}
+        <div className="col-span-2">
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
+            Find Your <span className="text-cyan-400">Perfect PG</span> in Seconds
+          </h1>
+          <p className="text-gray-400 mt-6 text-lg">
+            Discover budget-friendly and comfortable PGs with the amenities you need — right where you want to be.
+          </p>
+          <div className="mt-8">
+            <a
+              href="#listings"
+              className="bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-3 px-6 rounded-lg transition"
+            >
+              Find a PG
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

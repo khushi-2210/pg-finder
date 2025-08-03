@@ -1,16 +1,40 @@
+// PGCard.jsx
 const PGCard = ({ pg }) => {
   return (
-    <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
-      <img src={pg.image} alt={pg.name} className="w-full h-40 object-cover" />
-      <div className="p-4">
-        <h3 className="text-lg font-bold text-gray-800">{pg.name}</h3>
-        <p className="text-sm text-gray-600 mb-2">{pg.location}</p>
-        <p className="text-blue-600 font-semibold mb-2">₹{pg.price}/month</p>
-        <ul className="text-xs text-gray-500">
-          {pg.amenities.map((a, i) => (
-            <li key={i}>• {a}</li>
+    <div className="max-w-sm bg-gray-800 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-gray-700">
+      {/* Image */}
+      <img
+        src={pg.image}
+        alt={pg.name}
+        className="w-full h-48 object-cover"
+      />
+
+      {/* Content */}
+      <div className="p-4 flex flex-col gap-3">
+        <h2 className="text-lg font-semibold text-white">{pg.name}</h2>
+        <p className="text-sm text-gray-400">{pg.location}</p>
+
+        {/* Amenities */}
+        <div className="flex flex-wrap gap-2 mt-2">
+          {pg.amenities?.map((amenity, index) => (
+            <span
+              key={index}
+              className="bg-cyan-700/20 text-cyan-300 text-xs font-medium px-2.5 py-0.5 rounded-full"
+            >
+              {amenity}
+            </span>
           ))}
-        </ul>
+        </div>
+
+        {/* Price + CTA */}
+        <div className="flex justify-between items-center mt-4">
+          <span className="text-base font-semibold text-green-400">
+            ₹{pg.price}/month
+          </span>
+          <button className="bg-cyan-600 hover:bg-cyan-500 text-white text-sm px-4 py-2 rounded transition">
+            View Details
+          </button>
+        </div>
       </div>
     </div>
   );

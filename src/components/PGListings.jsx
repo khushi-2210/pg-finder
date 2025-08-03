@@ -19,7 +19,7 @@ const dummyPGs = [
     id: 3,
     name: "City View PG",
     location: "Mumbai",
-    price: 4500,
+    price: 9000,
     amenities: ["Food", "AC", "Wi-Fi"],
     image: "https://imgs.search.brave.com/FDBodDTQIBrNOIJDmVYKcE8gAsCb82XIa8a7-UHj_go/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOC8w/MS8yMC8yMi8xNS9y/b29tLTMwOTU0ODNf/NjQwLmpwZw",
   }
@@ -27,14 +27,17 @@ const dummyPGs = [
 
 const PGListings = () => {
   return (
-    <section className="py-16 bg-gray-50 px-6">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
-        PG Listings
-      </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {dummyPGs.map((pg, idx) => (
-          <PGCard key={idx} pg={pg} />
-        ))}
+    <section className="bg-gray-950 py-20 px-6 text-white">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-center m-2 mt-0">
+          PG Listings
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {dummyPGs.map((pg, idx) => (
+            <PGCard key={idx} pg={pg} />
+          ))}
+        </div>
       </div>
     </section>
   );
