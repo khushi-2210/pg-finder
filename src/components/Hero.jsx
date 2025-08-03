@@ -49,7 +49,7 @@ const Hero = () => {
     <section
       className="relative bg-cover bg-center bg-no-repeat py-20 px-6 flex items-center justify-center"
       style={{
-        backgroundImage: "url('nightscape.jpg')",
+        backgroundImage: "url('/nightscape.jpg')",
       }}
     >
       {/* Optional overlay for readability */}

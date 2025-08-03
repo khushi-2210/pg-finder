@@ -4,7 +4,7 @@ const CTASection = ({ handleSearchClick, handleListPGClick }) => {
   return (
     <section
       className="relative bg-cover bg-center py-20 px-6 mb-0 text-center text-white"
-      style={{ backgroundImage: "url('/room.jpg')" }} // image from /public/map.jpg
+      style={{ backgroundImage: "url('/room.jpg')" }} 
     >
       {/* Optional overlay */}
       <div className="absolute inset-0 bg-teal-100/30"></div>
