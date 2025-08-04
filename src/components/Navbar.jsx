@@ -62,68 +62,140 @@
 
 // export default Navbar;
 
+// import { useState } from "react";
+
+// const Navbar = () => {
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   return (
+//     <header className="bg-teal-100 border-b border-teal-200 shadow-md sticky top-0 z-50">
+//       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+//         {/* Logo */}
+//         <h1 className="text-2xl font-bold text-gray-800 tracking-wide">
+//           PG<span className="text-teal-500">Finder</span>
+//         </h1>
+
+//         {/* Desktop Menu */}
+//         <nav className="hidden md:flex space-x-8 text-sm font-medium items-center">
+//           <a href="#" className="text-gray-600 hover:text-teal-600 transition">Home</a>
+//           <a href="#" className="text-gray-600 hover:text-teal-600 transition">Listings</a>
+//           <a href="#" className="text-gray-600 hover:text-teal-600 transition">About</a>
+//           <a href="#" className="text-gray-600 hover:text-teal-600 transition">Contact</a>
+          
+//           {/* Auth Buttons */}
+//           <a href="/login" className="text-gray-600 hover:text-teal-600 hover:underline transition">Login</a>
+//           <a 
+//             href="/signup" 
+//             className="ml-2 bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-full transition"
+//           >
+//             Sign Up
+//           </a>
+//         </nav>
+
+//         {/* Mobile Toggle */}
+//         <div className="md:hidden">
+//           <button
+//             onClick={() => setIsOpen(!isOpen)}
+//             className="text-gray-600 focus:outline-none"
+//           >
+//             {isOpen ? "✕" : "☰"}
+//           </button>
+//         </div>
+//       </div>
+
+//       {/* Mobile Menu */}
+//       {isOpen && (
+//         <nav className="md:hidden px-6 pb-4 flex flex-col space-y-3 bg-white text-sm">
+//           <a href="#" className="text-gray-600 hover:text-teal-600 transition">Home</a>
+//           <a href="#" className="text-gray-600 hover:text-teal-600 transition">Listings</a>
+//           <a href="#" className="text-gray-600 hover:text-teal-600 transition">About</a>
+//           <a href="#" className="text-gray-600 hover:text-teal-600 transition">Contact</a>
+//           <a href="/login" className="text-gray-600 hover:text-teal-600 transition">Login</a>
+//           <a 
+//             href="/signup" 
+//             className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-full text-center transition"
+//           >
+//             Sign Up
+//           </a>
+//         </nav>
+//       )}
+//     </header>
+//   );
+// };
+
+// export default Navbar;
+
 import { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-teal-100 border-b border-teal-200 shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <h1 className="text-2xl font-bold text-gray-800 tracking-wide">
-          PG<span className="text-teal-500">Finder</span>
-        </h1>
+    <header className="relative overflow-hidden sticky top-0 z-50">
+      {/* Background image */}
+      <img
+        src="/pattern.jpg" // Make sure this path is correct relative to your `public` folder
+        alt="navbar background"
+        className="absolute inset-0 w-full h-full object-cover opacity-100 z-0"
+      />
 
-        {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-8 text-sm font-medium items-center">
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">Home</a>
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">Listings</a>
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">About</a>
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">Contact</a>
-          
-          {/* Auth Buttons */}
-          <a href="/login" className="text-gray-600 hover:text-teal-600 hover:underline transition">Login</a>
-          <a 
-            href="/signup" 
-            className="ml-2 bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-full transition"
-          >
-            Sign Up
-          </a>
-        </nav>
+      {/* Main navbar content */}
+      <div className="relative z-10 bg-white/70 backdrop-blur-md border-b border-teal-200 shadow-md">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          {/* Logo */}
+          <h1 className="text-2xl font-bold text-gray-800 tracking-wide">
+            PG<span className="text-teal-500">Finder</span>
+          </h1>
 
-        {/* Mobile Toggle */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-gray-600 focus:outline-none"
-          >
-            {isOpen ? "✕" : "☰"}
-          </button>
+          {/* Desktop Menu */}
+          <nav className="hidden md:flex space-x-8 text-sm font-medium items-center">
+            <a href="#" className="text-gray-600 hover:text-teal-600 transition">Home</a>
+            <a href="#" className="text-gray-600 hover:text-teal-600 transition">Listings</a>
+            <a href="#" className="text-gray-600 hover:text-teal-600 transition">About</a>
+            <a href="#" className="text-gray-600 hover:text-teal-600 transition">Contact</a>
+            <a href="/login" className="text-gray-600 hover:text-teal-600 hover:underline transition">Login</a>
+            <a 
+              href="/signup" 
+              className="ml-2 bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-full transition"
+            >
+              Sign Up
+            </a>
+          </nav>
+
+          {/* Mobile Toggle */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-600 focus:outline-none"
+            >
+              {isOpen ? "✕" : "☰"}
+            </button>
+          </div>
         </div>
-      </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <nav className="md:hidden px-6 pb-4 flex flex-col space-y-3 bg-white text-sm">
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">Home</a>
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">Listings</a>
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">About</a>
-          <a href="#" className="text-gray-600 hover:text-teal-600 transition">Contact</a>
-          <a href="/login" className="text-gray-600 hover:text-teal-600 transition">Login</a>
-          <a 
-            href="/signup" 
-            className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-full text-center transition"
-          >
-            Sign Up
-          </a>
-        </nav>
-      )}
+        {/* Mobile Menu */}
+        {isOpen && (
+          <nav className="md:hidden px-6 pb-4 flex flex-col space-y-3 bg-white/90 backdrop-blur-md text-sm">
+            <a href="#" className="text-gray-600 hover:text-teal-600 transition">Home</a>
+            <a href="#" className="text-gray-600 hover:text-teal-600 transition">Listings</a>
+            <a href="#" className="text-gray-600 hover:text-teal-600 transition">About</a>
+            <a href="#" className="text-gray-600 hover:text-teal-600 transition">Contact</a>
+            <a href="/login" className="text-gray-600 hover:text-teal-600 transition">Login</a>
+            <a 
+              href="/signup" 
+              className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-full text-center transition"
+            >
+              Sign Up
+            </a>
+          </nav>
+        )}
+      </div>
     </header>
   );
 };
 
 export default Navbar;
+
 
 
 
