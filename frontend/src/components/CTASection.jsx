@@ -19,7 +19,7 @@ const CTASection = ({ handleSearchClick, handleListPGClick }) => {
         <div className="flex justify-center gap-6 flex-wrap">
           <button
             onClick={handleSearchClick}
-            className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300"
+            className="bg-yellow-400 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300"
           >
             Start Searching
           </button>

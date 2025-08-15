@@ -8,7 +8,7 @@ const PGCard = ({ pg, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className="group bg-gray-800 text-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-gray-800"
+      className="group bg-gray-600 text-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-gray-800"
     >
       {/* Image area */}
       <div className="relative h-48 md:h-56 overflow-hidden">
@@ -51,8 +51,7 @@ const PGCard = ({ pg, index }) => {
             View Details
           </button>
           <div className="text-sm font-medium">
-            <span className="text-green-400 font-bold">₹{pg.price}</span>
-            <span className="text-gray-400 hidden md:inline"> / month</span>
+            {/* <span className="text-green-400 font-bold">₹{pg.price}</span> */}
           </div>
         </div>
       </div>

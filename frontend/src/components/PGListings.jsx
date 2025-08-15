@@ -29,7 +29,7 @@ const PGListings = () => {
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-b from-white via-yellow-50 to-yellow-100">
+    <section className="relative py-20 bg-yellow-50">
       {/* Decorative top divider */}
       <svg
         className="absolute top-0 left-0 w-full h-16 text-white"
