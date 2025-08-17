@@ -7,7 +7,7 @@ const CTASection = ({ handleSearchClick, handleListPGClick }) => {
       style={{ backgroundImage: "url('/room.jpg')" }} 
     >
       {/* Optional overlay */}
-      <div className="absolute inset-0 bg-yellow-100/30"></div>
+      <div className="absolute inset-0 bg-yellow-100/10"></div>
 
       <div className="relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
